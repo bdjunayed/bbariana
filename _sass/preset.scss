@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import '../bower_components/susy/sass/susy';
+@import '../bower_components/normalize-scss/_normalize.scss';
+
+font-family{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+$susy: (
+flow: ltr, // ltr | rtl
+output: float, // float | isolate
+math: fluid, // fluid | static (requires column-width)
+column-width: false, // false | value
+container: 1366px, // length or % | auto
+container-position: center, // left | center | right | <length> [*2] (grid padding)
+last-flow: to, //from | to
+columns: 12,
+gutters: 1/4,
+gutter-position: after, // before | after | split | inside | inside-static (requires column-width)
+global-box-sizing: border-box, // content-box | border-box (affects inside/inside-static)
+debug: (
+image: hide, //hide | show
+color: rgba(#66f, .25),
+output: background, // background | overlay
+toggle: top left, //top left  | top right
+),
+use-custom: (
+background-image: true, // look for background-image mixin
+background-options: false, // look for background-size, -origin and -clip and other compass/bourbon mixins
+box-sizing: true, // look for custom bix sizing mixin
+clearfix: false, // true = look for internal clearfix before using micro clearfix
+rem: true, // look for rem mixin
+)
+);
+
+$gallery_layout: layout( 12 .125 fluid float after);
+
+$nav_layout: layout( 12 0 fluid float inside);
+
+$golden_layout: layout( (1 1.618 2.618) .1 fluid float split);
+/*-----all color-----*/
+$color-font:#37474f;
+$color-primary: #ff8f00; 
+$color-secondery:#E9A825;
+$color-dark: #000000;
+$color-white: #ffffff;
+
+.noPadding{
+    padding: 0 !important;
+}
