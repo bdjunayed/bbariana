@@ -14,5 +14,3 @@ exclude: ["node_modules",
 #markdown: redcarpet
 #highlighter: pygments # or rouge or null
 #disqus_shortname: 'your-shortname' # ignore this if not using Disqus
-#permalink: /:title/
-

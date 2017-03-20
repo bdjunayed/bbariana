@@ -3,7 +3,7 @@
 
 # TEAM
 
-    <name> microtechna<role> -- <twitter>
+    <name> -- <role> -- <twitter>
 
 # THANKS
 
