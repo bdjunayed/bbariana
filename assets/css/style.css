@@ -389,6 +389,15 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif; }
 
+.fixedHeader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  background: #000; }
+
 header {
   padding: 15px 0;
   position: relative;
@@ -427,6 +436,8 @@ header {
   top: 54px;
   width: 100%;
   z-index: 1; }
+  .headerMenu .logo {
+    margin-top: 12px; }
   .headerMenu nav ul {
     padding: 0;
     margin: 0; }
@@ -537,7 +548,7 @@ header {
   position: relative;
   width: 100%;
   height: auto;
-  padding: 100px 0;
+  padding: 50px 0;
   background: url(../images/download.jpg) no-repeat center center/cover; }
   .welcomeSocietySec .welSocietyTitle {
     position: relative; }
@@ -814,7 +825,7 @@ footer {
     text-transform: capitalize;
     margin: 10px 0;
     width: 100%;
-    padding: 8px 0 8px 8px; }
+    padding: 6px 0 6px 8px; }
   footer .contactForm .contactBtn {
     background: #e9a825 none repeat scroll 0 0;
     border-color: #e9a825 !important;
@@ -914,3 +925,80 @@ footer {
       font-size: 14px;
       font-weight: 400;
       line-height: 28px; }
+  .contactpageForm .googleMap {
+    width: 100%;
+    height: auto;
+    margin-top: 50px; }
+    .contactpageForm .googleMap img {
+      width: 100%;
+      height: auto; }
+
+/*-----------committee sec---------*/
+.committeSec {
+  position: relative;
+  width: 100%;
+  padding: 50px 0;
+  height: auto; }
+  .committeSec:before {
+    width: 32%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    background: #E9F2F9; }
+  .committeSec .committeeAside {
+    position: relative; }
+    .committeSec .committeeAside h1 {
+      font-size: 28px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #37474f; }
+    .committeSec .committeeAside p {
+      font-size: 15px;
+      font-weight: 400;
+      color: #37474f; }
+  .committeSec .committeemenu {
+    margin-top: 50px; }
+    .committeSec .committeemenu a {
+      display: block;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 38px;
+      color: #37474f;
+      text-decoration: none;
+      text-transform: capitalize;
+      transition: all ease 300ms; }
+      .committeSec .committeemenu a:hover {
+        color: #E9A825; }
+  .committeSec .committeeImg {
+    width: 100%;
+    height: auto; }
+    .committeSec .committeeImg h1 {
+      font-size: 30px;
+      font-weight: 500;
+      letter-spacing: 5px;
+      line-height: 36px;
+      margin-bottom: 40px; }
+    .committeSec .committeeImg img {
+      width: 100%;
+      height: auto; }
+
+.missionContent {
+  position: relative; }
+  .missionContent h1 {
+    font-size: 36px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #37474f; }
+  .missionContent h4 {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #37474f; }
+  .missionContent p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #37474f;
+    text-align: justify;
+    margin-bottom: 60px; }
