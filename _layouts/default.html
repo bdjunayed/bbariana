@@ -48,7 +48,53 @@
         {% include menu.html %}
 
         {{ content }}
-
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="fooLeftWidget">
+                            <a href="#"><img src="./assets/images/logo.png" alt=""></a>
+                            <i class="fa fa-phone"> &nbsp; &nbsp;<span>+91-022-65555592</span></i>
+                            <i class="fa fa-envelope"> &nbsp; &nbsp;<span class="info">enquiry@oes.edu.in</span></i>
+                        </div>
+                        <div class="socialConnect">
+                            <h2>social connect</h2>
+                            <a href=""><i class="fa fa-facebook"></i></a>
+                            <a href=""><i class="fa fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="contactUs">
+                            <h2>contact us</h2>
+                        </div>
+                        <form action="" method="post" class="contactForm">
+                            <input type="text" name="name" class="inpName" placeholder="Name">
+                            <input type="email" name="email" class="inpName" placeholder="email">
+                            <input type="text" name="Contact_no" class="inpName" placeholder="contact no">
+                            <input type="text" name="message" class="inpName" placeholder="Message">
+                            <input type="submit" class="contactBtn" name="submit" value="submit">
+                        </form>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="contactUs">
+                            <h2>our institute</h2>
+                        </div>
+                        <div class="footerRightWide">
+                            <ul>
+                                <li><a href="">Oriental College of Commerce & Management.</a></li>
+                                <li><a href="">Oriental College of Education & Research.</a></li>
+                                <li><a href="">OES International School, Andheri & Vashi.</a></li>
+                                <li><a href="">HKCE College of Education.</a></li>
+                                <li><a href=""> H K College of Pharmacy.</a></li>
+                                <li><a href="">H K Institute of Management Studies & Research.</a></li>
+                                <li><a href="">Oriental School of Business</a></li>
+                                <li><a href="">Oriental College of Commerce & Management.</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <!-- All JS Files --> 
         <script type="text/javascript" src="{{ site.baseurl }}assets/js/jquery.js"></script>
