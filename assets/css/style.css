@@ -680,10 +680,6 @@ header {
   .fusionBlogSec .blogItem {
     width: 100%;
     height: auto; }
-    .fusionBlogSec .blogItem img {
-      width: 100%;
-      height: auto;
-      margin-bottom: 20px; }
     .fusionBlogSec .blogItem a {
       font-size: 16px;
       font-weight: 600;
@@ -708,6 +704,69 @@ header {
       transition: all ease 500ms; }
       .fusionBlogSec .blogBtn a:hover {
         color: #ff8f00; }
+
+.blogItem {
+  position: relative; }
+
+.blogImg {
+  width: 100%;
+  height: auto; }
+
+.blogItem img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all ease 500ms;
+  -moz-transition: all ease 500ms;
+  -ms-transition: all ease 500ms;
+  -webkit-transition: all ease 500ms;
+  -o-transition: all ease 500ms;
+  transform: scale(1); }
+
+.blogItem:hover img {
+  transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1); }
+
+.mainMixItem {
+  position: relative;
+  margin-bottom: 22px; }
+
+.mainMixItem.mainMixItem1 {
+  margin-bottom: 0; }
+
+.MixImg {
+  width: 100%;
+  height: auto;
+  overflow: hidden; }
+
+.mainMixItem img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all ease 500ms;
+  -moz-transition: all ease 500ms;
+  -ms-transition: all ease 500ms;
+  -webkit-transition: all ease 500ms;
+  -o-transition: all ease 500ms;
+  transform: scale(1); }
+
+.mainMixItem:hover img {
+  transform: scale(1.1) rotate(2deg);
+  -moz-transform: scale(1.1) rotate(2deg);
+  -ms-transform: scale(1.1) rotate(2deg);
+  -webkit-transform: scale(1.1) rotate(2deg);
+  -o-transform: scale(1.1) rotate(2deg); }
 
 footer {
   position: relative;
@@ -777,3 +836,81 @@ footer {
       transition: all ease 300ms; }
       footer .footerRightWide ul li a:hover {
         color: #E9A825; }
+
+/*--------------contact page----------*/
+.contactBanner {
+  position: relative;
+  width: 100%;
+  padding: 100px 0;
+  height: auto;
+  background: url(../images/contact.jpg) no-repeat center center/cover; }
+  .contactBanner .contactTitle {
+    position: relative; }
+    .contactBanner .contactTitle h1 {
+      font-size: 42px;
+      font-weight: 300;
+      text-transform: capitalize;
+      color: #ff8f00; }
+    .contactBanner .contactTitle .conpageBtn a {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 400;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #ffffff;
+      transition: all ease .5s; }
+      .contactBanner .contactTitle .conpageBtn a:hover {
+        color: #E9A825; }
+    .contactBanner .contactTitle .conpageBtn span {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #ffffff; }
+
+.contactpageForm {
+  position: relative;
+  padding: 50px 0; }
+  .contactpageForm h2 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    margin-bottom: 20px;
+    color: #E9A825; }
+  .contactpageForm label {
+    display: block;
+    font-size: 16px;
+    margin: 10px 0; }
+  .contactpageForm .conpageForm {
+    position: relative; }
+    .contactpageForm .conpageForm .inputname {
+      font-size: 15px;
+      border: 2px solid #ddd; }
+    .contactpageForm .conpageForm .inputMessage {
+      width: 100%;
+      height: 80px;
+      resize: none;
+      padding: 10px;
+      border: 2px solid #ddd; }
+    .contactpageForm .conpageForm .conpageBtnform {
+      font-size: 16px;
+      text-transform: capitalize;
+      font-weight: 700;
+      background: #E9A825;
+      color: #ffffff;
+      padding: 6px 30px; }
+      .contactpageForm .conpageForm .conpageBtnform:hover {
+        background: #ff8f00; }
+  .contactpageForm .contactpageInfo {
+    position: relative; }
+    .contactpageForm .contactpageInfo h3 {
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: capitalize;
+      line-height: 28px;
+      color: #37474f;
+      margin-bottom: 20px; }
+    .contactpageForm .contactpageInfo p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 28px; }
