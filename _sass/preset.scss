@@ -9,6 +9,7 @@ font-family{
     font-family: 'Raleway', sans-serif;
 }
 $susy: (
+
 flow: ltr, // ltr | rtl
 output: float, // float | isolate
 math: fluid, // fluid | static (requires column-width)
@@ -16,7 +17,7 @@ column-width: false, // false | value
 container: 1366px, // length or % | auto
 container-position: center, // left | center | right | <length> [*2] (grid padding)
 last-flow: to, //from | to
-columns: 12,
+columns: 15,
 gutters: 1/4,
 gutter-position: after, // before | after | split | inside | inside-static (requires column-width)
 global-box-sizing: border-box, // content-box | border-box (affects inside/inside-static)
@@ -46,6 +47,15 @@ $color-primary: #ff8f00;
 $color-secondery:#E9A825;
 $color-dark: #000000;
 $color-white: #ffffff;
+$tablet-wide: 768px;
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
 
 .noPadding{
     padding: 0 !important;

@@ -1,9 +1,19 @@
 @import './preset.scss';
-@import './menu.scss';
 body{
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+}
+.fixedHeader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 15px;
+    transition: all ease 500ms;
+    z-index: 1;
+    background: #000;
 }
 header{
     padding: 15px 0;
@@ -52,7 +62,10 @@ header{
     position: absolute;
     top: 54px;
     width: 100%;
-    z-index: 1;
+    z-index: 111;
+    .logo {
+        margin-top: 12px;
+    }
     nav ul{
         padding: 0;
         margin: 0;
@@ -134,12 +147,58 @@ header{
 
 }
 /*----------slider end----------*/
+/*-------------fusion row-----------*/
+.fusionRow{
+    position: absolute;
+    left: 0;
+    bottom: 73px;
+    width: 100%;
+    height: auto;
+    .mainfusion{
+        background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+        height: auto;
+        padding: 37px 30px 38px 26px;
+        width: 100%;
+        .fusionImg{
+            float: left;
+            img{
+                width: auto;
+                height: auto;
+            }
+        }
+        .fusionCont{
+            float: left;
+            h2{
+                font-size: 17px;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: $color-white;
+                margin-left: 15px;
+                font-family: 'Raleway', sans-serif;
+            }
+            a{
+                font-size: 15px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: $color-secondery;
+                margin-left: 15px;
+                text-decoration: none;
+                transition: all ease 400ms;
+                &:hover{
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+
+}
+/*-------------fusion row-----------*/
 /*----------welcome socaiety start----------*/
 .welcomeSocietySec{
     position: relative;
     width: 100%;
     height: auto;
-    padding: 100px 0;
+    padding: 50px 0;
     background: url(../images/download.jpg) no-repeat center center /cover;
     .welSocietyTitle{
         position: relative;
@@ -158,7 +217,7 @@ header{
             color: $color-white;
             font-size: 20px;
             line-height: 1.8em;
-             padding: 0 16px;
+            padding: 0 16px;
             span{
                 font-size: 15px;
             }
@@ -182,3 +241,536 @@ header{
     }
 }
 /*----------welcome socaiety end---------*/
+
+/*------------gallary sec----*/
+.galarySec{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: url(../images/textute1.jpg) no-repeat center center /cover;
+    padding: 35px 0;
+    @extend %clearfix;
+    .maingellery{
+        @include container;
+        @extend %clearfix;
+        .gallaryTitle{
+            h1{
+                font-size: 50px;
+                font-weight: 300;
+                text-transform: uppercase;
+                line-height: 56px;
+            }
+        }
+
+        .gellaryImg{
+            width: 100%;
+            height: auto;
+            @media(min-width: $tablet-wide){
+                @include span(3 of 15);
+                .cataimg{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            img{
+                width: 100%;
+                height: auto;
+                transform: scale(0.9);
+                transition: all ease 500ms;
+            }
+            &:hover img{
+                transform: scale(1);
+            }
+        }
+        .gellaryImg1{
+            @media(min-width: $tablet-wide){
+                @include span(3 of 15);
+                img{
+                    width: 100%;
+                    height: auto;
+                    transform: scale(0.9);
+                    transition: all ease 500ms;
+
+                }
+                &:hover img{
+                    transform: scale(1);
+                }
+            }
+        }
+        .gellaryImg2{
+            @media(min-width: $tablet-wide){
+                @include span(3 of 15);
+                img{
+                    width: 100%;
+                    height: auto;
+                    transform: scale(0.9);
+                    transition: all ease 500ms;
+
+                }
+                &:hover img{
+                    transform: scale(1);
+                }
+            }
+        }
+        .gellaryImg3{
+            @media(min-width: $tablet-wide){
+                @include span(3 of 15);
+                img{
+                    width: 100%;
+                    height: auto;
+                    transform: scale(0.9);
+                    transition: all ease 500ms;
+
+                }
+                &:hover img{
+                    transform: scale(1);
+                }
+            }
+        }
+        .gellaryImg4{
+            @media(min-width: $tablet-wide){
+                @include span(3 of 15 last);
+                img{
+                    width: 100%;
+                    height: auto;
+                    transform: scale(0.9);
+                    transition: all ease 500ms;
+                    &:hover{
+                        transform: scale(1);
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}
+
+/*------------fusion blog----------*/
+.fusionBlogSec{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    background: url(../images/slider1.jpg) no-repeat center center /cover;
+    &:before{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0, .7);
+        content: '';
+    }
+    .blogTitle{
+        h1{
+            font-size: 50px;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: $color-white;
+        }
+    }
+    .blogItem{
+        width: 100%;
+        height: auto;
+
+        a{
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: $color-secondery;
+            text-decoration: none;
+            line-height: 28px;
+            transition: all ease 200ms;
+            &:hover{
+                color: $color-primary;
+            }
+        }
+
+    }
+    .blogBtn{
+        margin-top: 50px;
+        a{
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: capitalize;
+            color: $color-font;
+            text-decoration: none;
+            background: $color-white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: all ease 500ms;
+            &:hover{
+                color: $color-primary ;
+            }
+        }
+    }
+}
+.blogItem{
+    position: relative;
+
+}
+.blogImg{
+    width: 100%;
+    height: auto;
+}
+.blogItem img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -ms-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+    transform: scale(1);
+}
+.blogItem:hover img{
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.mainMixItem{
+    position: relative;
+    margin-bottom: 22px;
+}
+.mainMixItem.mainMixItem1{
+    margin-bottom: 0;
+}
+.MixImg{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.mainMixItem img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -ms-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+    transform: scale(1);
+}
+.mainMixItem:hover img{
+    transform: scale(1.1) rotate(2deg);
+    -moz-transform: scale(1.1) rotate(2deg);
+    -ms-transform: scale(1.1) rotate(2deg);
+    -webkit-transform: scale(1.1) rotate(2deg);
+    -o-transform: scale(1.1) rotate(2deg);
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    background: #111111;
+    .fooLeftWidget{
+        a{
+            display: block;
+            img{
+                width: 80%;
+                height: auto;
+            }
+        }
+        i{
+            color: #e5e5e5;
+            font-size: 16px;
+            display: block;
+            margin: 10px 0;
+            span{
+                font-family: 'Roboto', sans-serif;
+            }
+            .info{
+                color: #e5e5e5 !important;
+            }
+        }
+    }
+    .socialConnect{
+        margin-top: 50px;
+        h2{
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #f2f2f2;
+            line-height: 56px;
+        }
+        a{
+            color: #e5e5e5;
+            font-size: 20px;
+            margin-right: 15px;
+            transition: .5s;
+            &:hover{
+                color: $color-primary;
+            }
+        }
+    }
+    .contactUs{
+        h2{
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #f2f2f2;
+            line-height: 56px;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            color: #ddd;
+        }
+    }
+    .contactForm{
+        position: relative;
+        .inpName{
+            font-size: 14px;
+            text-transform: capitalize;
+            margin: 10px 0;
+            position: relative;
+            width: 100%;
+            padding: 6px 0 6px 8px;
+
+        }
+        .contactBtn{
+            background: #e9a825 none repeat scroll 0 0;
+            border-bottom-right-radius: 4px;
+            border-color: #e9a825 !important;
+            border-top-right-radius: 4px;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 6px 22px;
+            position: absolute;
+            right: 0;
+            text-transform: uppercase;
+            top: 10px;
+            &:hover{
+                background: $color-primary;
+            }
+        }
+    }
+    .footerRightWide{
+        ul li{
+            list-style: numeric;
+            color: $color-white;
+            a{
+                font-size: 13px;
+                line-height: 22px;
+                text-decoration: none;
+                color: #ddd;
+                transition: all ease 300ms;
+                &:hover{
+                    color: $color-secondery;
+                }
+
+            }
+        }
+    }
+}
+
+/*--------------contact page----------*/
+.contactBanner{
+    position: relative;
+    width: 100%;
+    padding: 100px 0;
+    height: auto;
+    background: url(../images/contact.jpg) no-repeat center center /cover;
+    .contactTitle{
+        position: relative;
+        h1{
+            font-size: 42px;
+            font-weight: 300;
+            text-transform: capitalize;
+            color: $color-primary;
+        }
+        .conpageBtn a{
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 400;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color-white;
+            transition: all ease .5s;
+            &:hover{
+                color: $color-secondery;
+            }
+
+        }
+        .conpageBtn span{
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: $color-white;
+        }
+    }
+}
+
+
+.contactpageForm{
+    position: relative;
+    padding: 50px 0;
+    h2{
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 26px;
+        margin-bottom: 20px;
+        color: $color-secondery;
+    }
+    label{
+        display: block;
+        font-size: 16px;
+        margin: 10px 0;
+
+    }
+
+    .conpageForm{
+        position: relative;
+        .inputname{
+            font-size: 15px;
+            border: 2px solid #ddd;
+        }
+        .inputMessage{
+            width: 100%;
+            height: 80px;
+            resize: none;
+            padding: 10px;
+            border: 2px solid #ddd;
+        }
+        .conpageBtnform{
+            font-size: 16px;
+            text-transform: capitalize;
+            font-weight: 700;
+            background: $color-secondery;
+            color: $color-white;
+            padding: 6px 30px;
+            &:hover{
+                background: $color-primary;
+            }
+        }
+    }
+    .contactpageInfo{
+        position: relative;
+        h3{
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: capitalize;
+            line-height: 28px;
+            color: $color-font;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+    .googleMap{
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+/*-----------committee sec---------*/
+.committeSec{
+    position: relative;
+    width: 100%;
+    padding: 50px 0;
+    height: auto;
+    &:before{
+        width: 32%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+        background: #E9F2F9;
+    }
+    .committeeAside{
+        position: relative;
+        h1{
+            font-size: 28px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $color-font;
+        }
+        p{
+            font-size: 15px;
+            font-weight: 400;
+            color: $color-font;
+        }
+
+    }
+    .committeemenu{
+        margin-top: 50px;
+        a{
+            display: block;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 38px;
+            color: $color-font;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: all ease 300ms;
+            &:hover{
+                color: $color-secondery;
+            }
+        }
+    }
+    .committeeImg{
+        width: 100%;
+        height: auto;
+        h1{
+            font-size: 30px;
+            font-weight: 500;
+            letter-spacing: 5px;
+            line-height: 36px;
+            margin-bottom: 40px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+.missionContent{
+    position: relative;
+    h1{
+        font-size: 36px;
+        font-weight: 300;
+        text-transform: capitalize;
+        color: $color-font;
+    }
+    h4{
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: $color-font;
+    }
+    p{
+        font-size: 15px;
+        font-weight: 400;
+        color: $color-font;
+        text-align: justify;
+        margin-bottom: 60px;
+
+    }
+
+}
