@@ -14,10 +14,7 @@ $(document).ready(function () {
     /*FixHeader End By Shagor */
 
     $(".MobileMenu").on('click', function () {
-        $(".Menu > ul").slideToggle('slow');
-    });
-    $(".SubSer").on('click', function () {
-        $(".Menu ul li .Submenu").slideToggle('slow');
+        $("nav").slideToggle('slow');
     });
 
     /*MobileMenu End By Shagor */
